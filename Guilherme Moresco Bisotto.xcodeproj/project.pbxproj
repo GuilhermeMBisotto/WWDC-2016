@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A45A311CC98CC70028EEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A301CC98CC70028EEB2 /* AppDelegate.swift */; };
+		07A45A331CC98CC70028EEB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A321CC98CC70028EEB2 /* ViewController.swift */; };
+		07A45A361CC98CC70028EEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A341CC98CC70028EEB2 /* Main.storyboard */; };
+		07A45A381CC98CC70028EEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A371CC98CC70028EEB2 /* Assets.xcassets */; };
+		07A45A3B1CC98CC70028EEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A391CC98CC70028EEB2 /* LaunchScreen.storyboard */; };
+		07A45A401CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 07A45A3F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app */; };
+		07A45A461CC98CC70028EEB2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A441CC98CC70028EEB2 /* Interface.storyboard */; };
+		07A45A481CC98CC70028EEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A471CC98CC70028EEB2 /* Assets.xcassets */; };
+		07A45A4F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07A45A4E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07A45A561CC98CC70028EEB2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A551CC98CC70028EEB2 /* InterfaceController.swift */; };
+		07A45A581CC98CC70028EEB2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A571CC98CC70028EEB2 /* ExtensionDelegate.swift */; };
+		07A45A5A1CC98CC70028EEB2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A591CC98CC70028EEB2 /* NotificationController.swift */; };
+		07A45A5C1CC98CC70028EEB2 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A5B1CC98CC70028EEB2 /* GlanceController.swift */; };
+		07A45A5E1CC98CC70028EEB2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A45A5D1CC98CC70028EEB2 /* ComplicationController.swift */; };
+		07A45A601CC98CC70028EEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A45A5F1CC98CC70028EEB2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A45A411CC98CC70028EEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A45A251CC98CC60028EEB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A45A3E1CC98CC70028EEB2;
+			remoteInfo = "Guilherme Moresco Bisotto WatchKit App";
+		};
+		07A45A501CC98CC70028EEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A45A251CC98CC60028EEB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A45A4D1CC98CC70028EEB2;
+			remoteInfo = "Guilherme Moresco Bisotto WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07A45A671CC98CC70028EEB2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07A45A4F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A45A6B1CC98CC70028EEB2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				07A45A401CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A45A2D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guilherme Moresco Bisotto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A45A301CC98CC70028EEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07A45A321CC98CC70028EEB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07A45A351CC98CC70028EEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07A45A371CC98CC70028EEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A45A3A1CC98CC70028EEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07A45A3C1CC98CC70028EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A45A3F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guilherme Moresco Bisotto WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A45A451CC98CC70028EEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		07A45A471CC98CC70028EEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A45A491CC98CC70028EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A45A4E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Guilherme Moresco Bisotto WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A45A541CC98CC70028EEB2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		07A45A551CC98CC70028EEB2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		07A45A571CC98CC70028EEB2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		07A45A591CC98CC70028EEB2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		07A45A5B1CC98CC70028EEB2 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		07A45A5D1CC98CC70028EEB2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		07A45A5F1CC98CC70028EEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A45A611CC98CC70028EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A45A2A1CC98CC70028EEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A45A4B1CC98CC70028EEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A45A241CC98CC60028EEB2 = {
+			isa = PBXGroup;
+			children = (
+				07A45A2F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto */,
+				07A45A431CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App */,
+				07A45A521CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension */,
+				07A45A2E1CC98CC70028EEB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07A45A2E1CC98CC70028EEB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A45A2D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto.app */,
+				07A45A3F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app */,
+				07A45A4E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A45A2F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto */ = {
+			isa = PBXGroup;
+			children = (
+				07A45A301CC98CC70028EEB2 /* AppDelegate.swift */,
+				07A45A321CC98CC70028EEB2 /* ViewController.swift */,
+				07A45A341CC98CC70028EEB2 /* Main.storyboard */,
+				07A45A371CC98CC70028EEB2 /* Assets.xcassets */,
+				07A45A391CC98CC70028EEB2 /* LaunchScreen.storyboard */,
+				07A45A3C1CC98CC70028EEB2 /* Info.plist */,
+			);
+			path = "Guilherme Moresco Bisotto";
+			sourceTree = "<group>";
+		};
+		07A45A431CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				07A45A441CC98CC70028EEB2 /* Interface.storyboard */,
+				07A45A471CC98CC70028EEB2 /* Assets.xcassets */,
+				07A45A491CC98CC70028EEB2 /* Info.plist */,
+			);
+			path = "Guilherme Moresco Bisotto WatchKit App";
+			sourceTree = "<group>";
+		};
+		07A45A521CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07A45A551CC98CC70028EEB2 /* InterfaceController.swift */,
+				07A45A571CC98CC70028EEB2 /* ExtensionDelegate.swift */,
+				07A45A591CC98CC70028EEB2 /* NotificationController.swift */,
+				07A45A5B1CC98CC70028EEB2 /* GlanceController.swift */,
+				07A45A5D1CC98CC70028EEB2 /* ComplicationController.swift */,
+				07A45A5F1CC98CC70028EEB2 /* Assets.xcassets */,
+				07A45A611CC98CC70028EEB2 /* Info.plist */,
+				07A45A531CC98CC70028EEB2 /* Supporting Files */,
+			);
+			path = "Guilherme Moresco Bisotto WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		07A45A531CC98CC70028EEB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A45A541CC98CC70028EEB2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07A45A2C1CC98CC70028EEB2 /* Guilherme Moresco Bisotto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A45A6C1CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto" */;
+			buildPhases = (
+				07A45A291CC98CC70028EEB2 /* Sources */,
+				07A45A2A1CC98CC70028EEB2 /* Frameworks */,
+				07A45A2B1CC98CC70028EEB2 /* Resources */,
+				07A45A6B1CC98CC70028EEB2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A45A421CC98CC70028EEB2 /* PBXTargetDependency */,
+			);
+			name = "Guilherme Moresco Bisotto";
+			productName = "Guilherme Moresco Bisotto";
+			productReference = 07A45A2D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07A45A3E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A45A681CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto WatchKit App" */;
+			buildPhases = (
+				07A45A3D1CC98CC70028EEB2 /* Resources */,
+				07A45A671CC98CC70028EEB2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A45A511CC98CC70028EEB2 /* PBXTargetDependency */,
+			);
+			name = "Guilherme Moresco Bisotto WatchKit App";
+			productName = "Guilherme Moresco Bisotto WatchKit App";
+			productReference = 07A45A3F1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		07A45A4D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A45A641CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto WatchKit Extension" */;
+			buildPhases = (
+				07A45A4A1CC98CC70028EEB2 /* Sources */,
+				07A45A4B1CC98CC70028EEB2 /* Frameworks */,
+				07A45A4C1CC98CC70028EEB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guilherme Moresco Bisotto WatchKit Extension";
+			productName = "Guilherme Moresco Bisotto WatchKit Extension";
+			productReference = 07A45A4E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07A45A251CC98CC60028EEB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Guilherme Moresco Bisotto";
+				TargetAttributes = {
+					07A45A2C1CC98CC70028EEB2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P652DYXBT2;
+					};
+					07A45A3E1CC98CC70028EEB2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P652DYXBT2;
+					};
+					07A45A4D1CC98CC70028EEB2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P652DYXBT2;
+					};
+				};
+			};
+			buildConfigurationList = 07A45A281CC98CC60028EEB2 /* Build configuration list for PBXProject "Guilherme Moresco Bisotto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07A45A241CC98CC60028EEB2;
+			productRefGroup = 07A45A2E1CC98CC70028EEB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07A45A2C1CC98CC70028EEB2 /* Guilherme Moresco Bisotto */,
+				07A45A3E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App */,
+				07A45A4D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A45A2B1CC98CC70028EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A45A3B1CC98CC70028EEB2 /* LaunchScreen.storyboard in Resources */,
+				07A45A381CC98CC70028EEB2 /* Assets.xcassets in Resources */,
+				07A45A361CC98CC70028EEB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A45A3D1CC98CC70028EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A45A481CC98CC70028EEB2 /* Assets.xcassets in Resources */,
+				07A45A461CC98CC70028EEB2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A45A4C1CC98CC70028EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A45A601CC98CC70028EEB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A45A291CC98CC70028EEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A45A331CC98CC70028EEB2 /* ViewController.swift in Sources */,
+				07A45A311CC98CC70028EEB2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A45A4A1CC98CC70028EEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A45A5A1CC98CC70028EEB2 /* NotificationController.swift in Sources */,
+				07A45A581CC98CC70028EEB2 /* ExtensionDelegate.swift in Sources */,
+				07A45A5E1CC98CC70028EEB2 /* ComplicationController.swift in Sources */,
+				07A45A561CC98CC70028EEB2 /* InterfaceController.swift in Sources */,
+				07A45A5C1CC98CC70028EEB2 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07A45A421CC98CC70028EEB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A45A3E1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit App */;
+			targetProxy = 07A45A411CC98CC70028EEB2 /* PBXContainerItemProxy */;
+		};
+		07A45A511CC98CC70028EEB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A45A4D1CC98CC70028EEB2 /* Guilherme Moresco Bisotto WatchKit Extension */;
+			targetProxy = 07A45A501CC98CC70028EEB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07A45A341CC98CC70028EEB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A45A351CC98CC70028EEB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07A45A391CC98CC70028EEB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A45A3A1CC98CC70028EEB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07A45A441CC98CC70028EEB2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A45A451CC98CC70028EEB2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07A45A621CC98CC70028EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07A45A631CC98CC70028EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07A45A651CC98CC70028EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		07A45A661CC98CC70028EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		07A45A691CC98CC70028EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Guilherme_Moresco_Bisotto_WatchKit_Extension;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		07A45A6A1CC98CC70028EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Guilherme_Moresco_Bisotto_WatchKit_Extension;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		07A45A6D1CC98CC70028EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07A45A6E1CC98CC70028EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guilherme Moresco Bisotto/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuilhermeMBisotto.Guilherme-Moresco-Bisotto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A45A281CC98CC60028EEB2 /* Build configuration list for PBXProject "Guilherme Moresco Bisotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A45A621CC98CC70028EEB2 /* Debug */,
+				07A45A631CC98CC70028EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A45A641CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A45A651CC98CC70028EEB2 /* Debug */,
+				07A45A661CC98CC70028EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07A45A681CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A45A691CC98CC70028EEB2 /* Debug */,
+				07A45A6A1CC98CC70028EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07A45A6C1CC98CC70028EEB2 /* Build configuration list for PBXNativeTarget "Guilherme Moresco Bisotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A45A6D1CC98CC70028EEB2 /* Debug */,
+				07A45A6E1CC98CC70028EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07A45A251CC98CC60028EEB2 /* Project object */;
+}
