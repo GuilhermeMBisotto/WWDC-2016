@@ -1,0 +1,26 @@
+[
+	{
+    	"appID": 0,
+    	"appName": "Aproximar",
+    	"appIcon": "Aproximar.png",
+    	"appPrefixImgName": "aproximar-",
+        "function": "Developer and UI/UX and Visual Design",
+        "appDesc": "This project aims to facilitate the communication about students daily routine between schools and parents through mobile devices.\n\n\n3rd Place - 8 Tournament Entrepreneur PUCRS (November/2014)"
+	},
+	{
+    	"appID": 1,
+    	"appName": "Ball Legacy",
+    	"appIcon": "Ball Legacy.png",
+    	"appPrefixImgName": "ball-legacy-",
+        "function": "Developer and UI/UX and Visual Design",
+        "appDesc": "Bounce as fast as possible and dodge from enemies to get to the portal. You are against the clock, so hurry up! Ball Legacy is a vintage game in cyberpunk style. \n\nhttps://www.youtube.com/watch?v=5SA-RtYdL_k"
+	},
+	{
+    	"appID": 2,
+    	"appName": "Boom Balloon",
+    	"appIcon": "Boom Balloon.png",
+    	"appPrefixImgName": "boom-balloon-",
+        "function": "Developer and UI/UX and Visual Design",
+        "appDesc": "Pop as many balloons as you can, but be careful we have some surprises for you! \n\nhttps://itunes.apple.com/br/app/boomballoon/id981898204?l=en&mt=8"
+	}
+]

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Apps" representedClassName=".Apps" syncable="YES">
+        <attribute name="appIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="appName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appPrefixImgName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="function" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Company" representedClassName=".Company" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="function" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeInCompany" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Institution" representedClassName=".Institution" syncable="YES">
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="aLittleMore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="born" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cellPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkFacebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkGithub" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkLinkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Skill" representedClassName=".Skill" syncable="YES">
+        <attribute name="skillName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="Apps" positionX="-54" positionY="45" width="128" height="135"/>
+        <element name="Institution" positionX="-36" positionY="81" width="128" height="90"/>
+        <element name="Skill" positionX="-18" positionY="90" width="128" height="60"/>
+        <element name="Company" positionX="0" positionY="99" width="128" height="120"/>
+    </elements>
+</model>

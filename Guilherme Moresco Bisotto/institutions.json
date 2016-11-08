@@ -1,0 +1,22 @@
+[
+	{	
+		"instName" : "PUCRS University",
+		"info" : "Bachelor's Degree, Information System",
+		"period" : "March/2013 - Present"
+	},
+	{	
+		"instName":"Mesquita Technical School",
+		"info":"Computer Technician",
+		"period":"March/2011 - July/2012"
+	},
+	{	
+		"instName":"Wizard",
+		"info":"English Course",
+		"period":"July/2007 - December/2010"
+	},
+	{	
+		"instName":"Data Control",
+		"info":"Web Design and Graphic Design",
+		"period":"March/2009 - December/2009"
+	}
+]

@@ -12,6 +12,9 @@ import Foundation
 
 class GlanceController: WKInterfaceController {
 
+    @IBOutlet var labelDaysLeft: WKInterfaceLabel!
+    @IBOutlet var imageIcon: WKInterfaceImage!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -21,6 +24,19 @@ class GlanceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        let eventDateAsString: String = "12 Jun 2016 09:00:00"
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateFormat = "dd MMM yyyy HH:mm:ss"
+        let eventDate = dateFormatter.dateFromString(eventDateAsString)!
+        let currentDate = NSDate()
+        
+        let cal = NSCalendar.currentCalendar()
+        let components = cal.components(.Day, fromDate: currentDate, toDate: eventDate, options: NSCalendarOptions.MatchFirst)
+        
+        labelDaysLeft.setText("\(components.day)")
+
     }
 
     override func didDeactivate() {

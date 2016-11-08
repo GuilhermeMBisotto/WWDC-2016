@@ -1,26 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Guilherme_Moresco_Bisotto_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <separator alignment="left" id="t5t-gc-ISj">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <imageView alignment="center" image="wwdc16-logo" contentMode="scaleAspectFit" id="ttn-Oh-HEc"/>
+                        <label alignment="left" text="Today is:" id="q8E-9w-Vev"/>
+                        <dateLabel alignment="left" numberOfLines="2" format="EEE, d MMM, yyyy" id="Hyg-pB-rVE">
+                            <date key="previewedDate" timeIntervalSinceReferenceDate="487443600">
+                                <!--2016-06-12 17:00:00 +0000-->
+                            </date>
+                        </dateLabel>
+                        <separator width="134" alignment="left" id="EQc-iS-VM9">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <separator alignment="left" id="qg5-kk-xdh">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label width="136" alignment="left" text="Time left:" textAlignment="left" id="PvO-AP-pYS"/>
+                        <timer width="1" alignment="left" verticalAlignment="center" textAlignment="left" numberOfLines="2" enabled="YES" previewedSeconds="3600000" id="3k3-AQ-7zL">
+                            <calendarUnit key="units" day="YES" hour="YES" minute="YES" second="YES"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="countdownWWDC" destination="3k3-AQ-7zL" id="qfs-Vp-eHE"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Guilherme_Moresco_Bisotto_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <group width="1" alignment="left" spacing="0.0" id="uVA-cq-Jar">
+                                    <items>
+                                        <imageView width="29" height="29" alignment="left" image="icon" contentMode="scaleAspectFit" id="VF3-K7-cUY"/>
+                                        <label alignment="right" verticalAlignment="center" text="Days Left:" id="H1d-LH-tP7"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" radius="10" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="136" height="39" alignment="center" verticalAlignment="center" text="45" textAlignment="center" id="Wo7-Og-wL5">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                </label>
+                                <label width="136" height="25.5" alignment="left" verticalAlignment="bottom" text="Days left" textAlignment="center" id="2aU-Gj-bfS"/>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="imageIcon" destination="VF3-K7-cUY" id="pER-5i-QhO"/>
+                        <outlet property="labelDaysLeft" destination="Wo7-Og-wL5" id="w4u-fF-g5g"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
@@ -30,23 +77,15 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                        <label alignment="left" text="WOW... Look the date" textAlignment="left" numberOfLines="3" id="XkS-y5-khE"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
-                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="235" y="1001"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="KIl-fV-djm">
-            <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
 </document>
